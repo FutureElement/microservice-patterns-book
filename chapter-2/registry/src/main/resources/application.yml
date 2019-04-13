@@ -1,0 +1,16 @@
+spring:
+  application:
+    #应用名称
+    name: ms-registry1
+server:
+  #注册中心端口
+  port: 8080
+eureka:
+  instance:
+    #注册中心域名
+    hostname: ${spring.application.name}
+  client:
+    service-url:
+      defaultZone: http://ms-registry2:8082/eureka
+
+
