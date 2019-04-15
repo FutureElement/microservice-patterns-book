@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: application-name
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        #配置中心应用名
+        service-id: ms-config-server
+      profile: test
+#      username: demo
+#      password: 123456
+  profiles:
+    active: test
+#  security:
+#    user:
+#      name: demo
+#      password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ms-registry1:8080/eureka/

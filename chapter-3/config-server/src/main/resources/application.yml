@@ -1,20 +1,2 @@
 server:
   port: 0
-spring:
-  application:
-    #应用名称
-    name: ms-config-server
-  cloud:
-    config:
-      server:
-        git:
-          #git仓库的地址
-          uri: https://github.com/FutureElement/microservice-patterns-book.git
-          #指定搜索的路径
-          search-paths: chapter-3/config-resources
-#          username: demo
-#          password: 123456
-eureka:
-  client:
-    service-url:
-      defaultZone: http://ms-registry1:8080/eureka
