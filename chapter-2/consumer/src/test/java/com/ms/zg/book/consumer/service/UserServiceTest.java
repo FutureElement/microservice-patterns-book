@@ -1,4 +1,4 @@
-package com.ms.zg.book.consumer.repository;
+package com.ms.zg.book.consumer.service;
 
 import com.ms.zg.book.consumer.model.User;
 import org.junit.Test;
@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import reactor.core.publisher.Mono;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -15,27 +14,17 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserRepositoryTest {
+public class UserServiceTest {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
 
     @Test
     public void getUserById() {
-        final User user = userRepository.getUserById("1");
+        final User user = userService.getUserById("3");
 
         assert user != null;
-        assertThat(user.getId()).isEqualTo("1");
-        assertThat(user.getName()).isEqualTo("demo");
-    }
-
-    @Test
-    public void getMonoUserById() {
-        final Mono<User> monoUser = userRepository.getMonoUserById("2");
-        final User user = monoUser.block();
-
-        assert user != null;
-        assertThat(user.getId()).isEqualTo("2");
+        assertThat(user.getId()).isEqualTo("3");
         assertThat(user.getName()).isEqualTo("demo");
     }
 }
