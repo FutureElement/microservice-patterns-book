@@ -7,15 +7,10 @@ spring:
         enabled: true
         #配置中心应用名
         service-id: ms-config-server
-      profile: test
-#      username: demo
-#      password: 123456
+      username: demo
+      password: 123456
   profiles:
     active: test
-#  security:
-#    user:
-#      name: demo
-#      password: 123456
 eureka:
   client:
     service-url:
