@@ -1,0 +1,24 @@
+server:
+  port: 0
+feign:
+  hystrix:
+    enabled: true
+
+#统计窗口时段配置，单位是个，表示多少个时间段，一个时间段是1秒
+metrics:
+  rollingStats:
+    numBuckets: 20
+
+
+circuitBreaker:
+  # 单位是%，默认是50，表示错误次数超过50%断路器就会启动
+  errorThresholdPercentage: 50
+  #最大请求数，默认是20
+  requestVolumeThreshold: 20
+  # 单位毫秒，默认是5000，表示断路器开启后5秒后会进入半开起状态
+  sleepWindowInMilliseconds: 5000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ms-registry1:8080/eureka/
