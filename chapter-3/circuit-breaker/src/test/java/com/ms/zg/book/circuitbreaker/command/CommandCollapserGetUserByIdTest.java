@@ -4,7 +4,7 @@ import com.ms.zg.book.circuitbreaker.model.User;
 import com.ms.zg.book.circuitbreaker.service.UserService;
 import com.netflix.hystrix.HystrixCommandKey;
 import com.netflix.hystrix.HystrixRequestCache;
-import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault;
+import com.netflix.hystrix.strategy.HystrixPlugins;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import org.junit.After;
 import org.junit.Before;
@@ -23,8 +23,8 @@ public class CommandCollapserGetUserByIdTest {
     @Before
     public void before() {
         // 初始化Hystrix
-        HystrixRequestContext.setContextOnCurrentThread(null);
         context = HystrixRequestContext.initializeContext();
+        HystrixRequestContext.setContextOnCurrentThread(context);
     }
 
     @After
@@ -151,8 +151,9 @@ public class CommandCollapserGetUserByIdTest {
         Future<User> f6 = new CommandCollapserGetUserById2("2", userService).queue();
         //调用HystrixRequestCache的clear方法清除缓存
         final String cacheKey = "get_user_by_ids_" + Arrays.toString(new String[]{"1", "2"});
-        HystrixRequestCache.getInstance(HystrixCommandKey.Factory.asKey("GetUserById"), HystrixConcurrencyStrategyDefault.getInstance()).clear(cacheKey);
 
+        HystrixRequestCache.getInstance(HystrixCommandKey.Factory.asKey("GetUserById"),
+                HystrixPlugins.getInstance().getConcurrencyStrategy()).clear(cacheKey);
 
         assertThat(f5.get().getId()).isEqualTo("1");
         assertThat(f6.get().getId()).isEqualTo("2");
