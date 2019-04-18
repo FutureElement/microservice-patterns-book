@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ms.zg.book.tdd.CalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-04-18T15:59:23" hostname="CNgzhang.local" time="0.042">
+  <properties/>
+  <testcase name="when_add_3_and_2_should_return_5" classname="com.ms.zg.book.tdd.CalculatorTest" time="0.042"/>
+  <testcase name="when_add_1_and_1_should_return_2" classname="com.ms.zg.book.tdd.CalculatorTest" time="0.0"/>
+  <testcase name="when_add_1_and_2_should_return_3" classname="com.ms.zg.book.tdd.CalculatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

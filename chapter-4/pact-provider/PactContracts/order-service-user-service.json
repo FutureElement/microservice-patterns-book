@@ -1,0 +1,46 @@
+{
+  "provider": {
+    "name": "user-service"
+  },
+  "consumer": {
+    "name": "order-service"
+  },
+  "interactions": [
+    {
+      "description": "Get user by id for dsl test",
+      "request": {
+        "method": "GET",
+        "path": "/users/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "id": "1",
+          "username": "zhanggang",
+          "roles": [
+            {
+              "id": 1,
+              "name": "admin"
+            }
+          ]
+        }
+      },
+      "providerStates": [
+        {
+          "name": "Dsl test GET /user/{id}"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.6.4"
+    }
+  }
+}
