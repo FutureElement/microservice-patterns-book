@@ -1,0 +1,22 @@
+[
+  {
+    "description": "find_user_by_id",
+    "request": {
+      "method": "GET",
+      "uri": "/users/1"
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "id": "1",
+        "username": "zhanggang",
+        "roles": [
+          {
+            "id": 1,
+            "name": "admin"
+          }
+        ]
+      }
+    }
+  }
+]
