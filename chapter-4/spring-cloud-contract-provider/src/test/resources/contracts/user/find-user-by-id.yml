@@ -1,0 +1,8 @@
+request:
+  method: GET
+  url: /users/1
+response:
+  status: 200
+  bodyFromFile: find-user-by-id-response-body.json
+  headers:
+    Content-Type: application/json;charset=UTF-8

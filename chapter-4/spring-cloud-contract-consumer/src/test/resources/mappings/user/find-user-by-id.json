@@ -1,0 +1,16 @@
+{
+  "id" : "5892c6cd-a3e7-448b-97ad-e51558725a56",
+  "request" : {
+    "url" : "/users/1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"roles\":[{\"name\":\"admin\",\"id\":1}],\"id\":\"1\",\"username\":\"zhanggang\"}",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "5892c6cd-a3e7-448b-97ad-e51558725a56"
+}
