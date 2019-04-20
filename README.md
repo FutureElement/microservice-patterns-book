@@ -5,5 +5,6 @@
 	chapter-5 	第5章 API网关
 
 
-示例均使用Java编写，采用Gradle进行编译，
+示例均使用Java编写，采用Gradle进行编译。
+
 部分代码使用[Lombok](https://projectlombok.org/)，集成时需要安装插件，可以参考： https://projectlombok.org/setup/overview
