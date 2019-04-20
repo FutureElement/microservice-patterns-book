@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zuul-api-gateway
+  cloud:
+    consul:
+      port: 8500
+      host: 127.0.0.1

@@ -1,0 +1,19 @@
+zuul:
+  routes:
+    # 配置zuul路由
+    users:
+      path: /users/**
+      stripPrefix: false
+      #url: http://localhost:8081
+      serviceId: users-service
+  semaphore:
+    max-semaphores: 100
+  ribbon-isolation-strategy: semaphore
+  sensitive-headers: Cookie,Set-Cookie,Authorization,X-secret
+
+ribbon:
+  eureka:
+    enabled: false
+users-service:
+  ribbon:
+    listOfServers: http://localhost:8081,http://localhost:8082
