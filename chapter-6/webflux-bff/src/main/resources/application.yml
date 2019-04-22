@@ -1,0 +1,13 @@
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ms-registry1:8080/eureka/
+
+services:
+  orders:
+    url: http://orders-service
+  logistics:
+    url: http://logistics-service

@@ -1,0 +1,33 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+type Query {
+  user(id: String!): User
+  userList(ids: [String]!): [User]
+}
+type Mutation {
+  createUser(user: UserInput!): User
+}
+input UserInput{
+  username: String
+  password: String
+  gender: Gender
+  age: Int
+}
+type User{
+  id: String
+  username: String
+  password: String
+  gender: Gender
+  age: Int
+  roles: [Role]
+}
+type Role{
+  id: ID
+  name: String
+}
+enum Gender{
+  MALE
+  FEMALE
+}
