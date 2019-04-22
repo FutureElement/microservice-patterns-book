@@ -1,0 +1,5 @@
+2019-04-23 02:29:35 [com.xxl.job.core.thread.JobThread#run]-[124]-[Thread-16] <br>----------- xxl-job job execute start -----------<br>----------- Param:a b c
+2019-04-23 02:29:35 [com.ms.zg.book.xxljobexecutor.job.TestJobHandler#execute]-[14]-[Thread-16] XXL-JOB, Hello World.
+2019-04-23 02:29:35 [com.ms.zg.book.xxljobexecutor.job.TestJobHandler#execute]-[15]-[Thread-16] param is :a b c
+2019-04-23 02:29:35 [com.xxl.job.core.thread.JobThread#run]-[164]-[Thread-16] <br>----------- xxl-job job execute end(finish) -----------<br>----------- ReturnT:ReturnT [code=200, msg=null, content=null]
+2019-04-23 02:29:35 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[185]-[xxl-job, executor TriggerCallbackThread] <br>----------- xxl-job job callback finish.

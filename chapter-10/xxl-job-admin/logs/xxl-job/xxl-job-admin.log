@@ -1,0 +1,284 @@
+2019-04-23 02:08:15,610 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 48] Starting XxlJobAdminApplication on CNgzhang.local with PID 51773 (/workspace/book/chapter-10/xxl-job-admin/target/classes started by gzhang in /workspace/book/chapter-10/xxl-job-admin)
+2019-04-23 02:08:15,626 INFO [main] c.x.job.admin.XxlJobAdminApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
+2019-04-23 02:08:15,775 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
+2019-04-23 02:08:15,804 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769e7ee8: startup date [Tue Apr 23 02:08:15 CST 2019]; root of context hierarchy
+2019-04-23 02:08:16,754 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-04-23 02:08:16,765 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-23 02:08:16,778 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2019-04-23 02:08:16,779 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
+2019-04-23 02:08:16,849 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2019-04-23 02:08:16,850 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1046 ms
+2019-04-23 02:08:16,962 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-23 02:08:16,964 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-23 02:08:16,965 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-23 02:08:16,965 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-23 02:08:16,965 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-23 02:08:17,362 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 538] Loading Quartz config from [class path resource [quartz.properties]]
+2019-04-23 02:08:17,379 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-04-23 02:08:17,385 INFO [main] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-23 02:08:17,385 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-04-23 02:08:17,390 WARN [main] o.a.tomcat.jdbc.pool.ConnectionPool [DirectJDKLog.java : 180] maxIdle is larger than maxActive, setting maxIdle to: 30
+2019-04-23 02:08:18,048 INFO [main] o.s.s.quartz.LocalDataSourceJobStore [JobStoreSupport.java : 672] Using db table-based data access locking (synchronization).
+2019-04-23 02:08:18,050 INFO [main] o.s.s.quartz.LocalDataSourceJobStore [JobStoreCMT.java : 145] JobStoreCMT initialized.
+2019-04-23 02:08:18,051 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'getSchedulerFactoryBean' with instanceId 'CNgzhang.local1555956497379'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'com.xxl.job.admin.core.quartz.XxlJobThreadPool' - with 1 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2019-04-23 02:08:18,051 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'getSchedulerFactoryBean' initialized from an externally provided properties instance.
+2019-04-23 02:08:18,051 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-04-23 02:08:18,052 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6920614
+2019-04-23 02:08:18,064 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.AdminBiz, serviceBean = class com.xxl.job.admin.service.impl.AdminBizImpl
+2019-04-23 02:08:18,065 INFO [main] c.x.j.a.c.s.XxlJobDynamicScheduler [XxlJobDynamicScheduler.java : 68] >>>>>>>>> init xxl-job admin success.
+2019-04-23 02:08:18,286 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769e7ee8: startup date [Tue Apr 23 02:08:15 CST 2019]; root of context hierarchy
+2019-04-23 02:08:18,324 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.index(org.springframework.ui.Model)
+2019-04-23 02:08:18,325 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/help]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.help()
+2019-04-23 02:08:18,325 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/toLogin]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.toLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-04-23 02:08:18,326 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/login],methods=[POST]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.IndexController.loginDo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2019-04-23 02:08:18,326 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/chartInfo]}" onto public com.xxl.job.core.biz.model.ReturnT<java.util.Map<java.lang.String, java.lang.Object>> com.xxl.job.admin.controller.IndexController.chartInfo(java.util.Date,java.util.Date)
+2019-04-23 02:08:18,326 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/logout],methods=[POST]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.IndexController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-23 02:08:18,327 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/api]}" onto public void com.xxl.job.admin.controller.JobApiController.api(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-04-23 02:08:18,328 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobcode]}" onto public java.lang.String com.xxl.job.admin.controller.JobCodeController.index(org.springframework.ui.Model,int)
+2019-04-23 02:08:18,328 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobcode/save]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobCodeController.save(org.springframework.ui.Model,int,java.lang.String,java.lang.String)
+2019-04-23 02:08:18,330 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup]}" onto public java.lang.String com.xxl.job.admin.controller.JobGroupController.index(org.springframework.ui.Model)
+2019-04-23 02:08:18,330 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup/remove]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.remove(int)
+2019-04-23 02:08:18,330 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup/update]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.update(com.xxl.job.admin.core.model.XxlJobGroup)
+2019-04-23 02:08:18,331 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup/save]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.save(com.xxl.job.admin.core.model.XxlJobGroup)
+2019-04-23 02:08:18,333 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo]}" onto public java.lang.String com.xxl.job.admin.controller.JobInfoController.index(org.springframework.ui.Model,int)
+2019-04-23 02:08:18,333 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/add]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.add(com.xxl.job.admin.core.model.XxlJobInfo)
+2019-04-23 02:08:18,334 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/remove]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.remove(int)
+2019-04-23 02:08:18,334 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/update]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.update(com.xxl.job.admin.core.model.XxlJobInfo)
+2019-04-23 02:08:18,334 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/start]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.start(int)
+2019-04-23 02:08:18,335 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/pageList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xxl.job.admin.controller.JobInfoController.pageList(int,int,int,java.lang.String,java.lang.String,java.lang.String)
+2019-04-23 02:08:18,335 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/stop]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.pause(int)
+2019-04-23 02:08:18,335 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/trigger]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.triggerJob(int,java.lang.String)
+2019-04-23 02:08:18,338 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog]}" onto public java.lang.String com.xxl.job.admin.controller.JobLogController.index(org.springframework.ui.Model,java.lang.Integer)
+2019-04-23 02:08:18,338 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/pageList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xxl.job.admin.controller.JobLogController.pageList(int,int,int,int,int,java.lang.String)
+2019-04-23 02:08:18,338 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/getJobsByGroup]}" onto public com.xxl.job.core.biz.model.ReturnT<java.util.List<com.xxl.job.admin.core.model.XxlJobInfo>> com.xxl.job.admin.controller.JobLogController.getJobsByGroup(int)
+2019-04-23 02:08:18,339 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/logDetailPage]}" onto public java.lang.String com.xxl.job.admin.controller.JobLogController.logDetailPage(int,org.springframework.ui.Model)
+2019-04-23 02:08:18,339 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/logDetailCat]}" onto public com.xxl.job.core.biz.model.ReturnT<com.xxl.job.core.biz.model.LogResult> com.xxl.job.admin.controller.JobLogController.logDetailCat(java.lang.String,long,int,int)
+2019-04-23 02:08:18,339 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/logKill]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobLogController.logKill(int)
+2019-04-23 02:08:18,340 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/clearLog]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobLogController.clearLog(int,int,int)
+2019-04-23 02:08:18,341 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-23 02:08:18,342 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-23 02:08:18,363 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-23 02:08:18,364 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-23 02:08:18,387 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-23 02:08:18,497 INFO [main] o.s.w.s.v.f.FreeMarkerConfigurer [FreeMarkerConfigurer.java : 127] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-04-23 02:08:18,644 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
+2019-04-23 02:08:18,651 INFO [main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 345] Starting beans in phase 2147483647
+2019-04-23 02:08:18,651 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 689] Will start Quartz Scheduler [getSchedulerFactoryBean] in 20 seconds
+2019-04-23 02:08:18,659 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8080"]
+2019-04-23 02:08:18,681 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
+2019-04-23 02:08:18,689 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8080 (http)
+2019-04-23 02:08:18,694 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 57] Started XxlJobAdminApplication in 3.314 seconds (JVM running for 4.165)
+2019-04-23 02:08:38,655 INFO [Quartz Scheduler [getSchedulerFactoryBean]] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 705] Starting Quartz Scheduler now, after delay of 20 seconds
+2019-04-23 02:08:38,694 INFO [Quartz Scheduler [getSchedulerFactoryBean]] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956497379 started.
+2019-04-23 02:08:48,903 INFO [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 180] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-23 02:08:48,903 INFO [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 489] FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-23 02:08:48,920 INFO [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 508] FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-04-23 02:09:07,703 INFO [Thread-12] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769e7ee8: startup date [Tue Apr 23 02:08:15 CST 2019]; root of context hierarchy
+2019-04-23 02:09:07,705 INFO [Thread-12] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 360] Stopping beans in phase 2147483647
+2019-04-23 02:09:07,707 INFO [Thread-12] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956497379 paused.
+2019-04-23 02:09:07,707 INFO [Thread-12] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
+2019-04-23 02:09:07,709 INFO [Thread-12] c.x.j.a.c.t.JobTriggerPoolHelper [JobTriggerPoolHelper.java : 108] >>>>>>>>> xxl-job trigger thread pool shutdown success.
+2019-04-23 02:09:07,709 INFO [xxl-job, admin JobRegistryMonitorHelper] c.x.j.a.c.t.JobRegistryMonitorHelper [JobRegistryMonitorHelper.java : 92] >>>>>>>>>>> xxl-job, job registry monitor thread stop
+2019-04-23 02:09:07,710 INFO [xxl-job, admin JobFailMonitorHelper] c.x.j.a.c.t.JobFailMonitorHelper [JobFailMonitorHelper.java : 96] >>>>>>>>>>> xxl-job, job fail monitor thread stop
+2019-04-23 02:09:07,711 INFO [Thread-12] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 806] Shutting down Quartz Scheduler
+2019-04-23 02:09:07,711 INFO [Thread-12] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956497379 shutting down.
+2019-04-23 02:09:07,712 INFO [Thread-12] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956497379 paused.
+2019-04-23 02:09:07,713 INFO [Thread-12] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956497379 shutdown complete.
+2019-04-23 02:09:10,407 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 48] Starting XxlJobAdminApplication on CNgzhang.local with PID 51793 (/workspace/book/chapter-10/xxl-job-admin/target/classes started by gzhang in /workspace/book/chapter-10/xxl-job-admin)
+2019-04-23 02:09:10,411 INFO [main] c.x.job.admin.XxlJobAdminApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
+2019-04-23 02:09:10,616 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
+2019-04-23 02:09:10,643 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769e7ee8: startup date [Tue Apr 23 02:09:10 CST 2019]; root of context hierarchy
+2019-04-23 02:09:11,694 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8600 (http)
+2019-04-23 02:09:11,706 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8600"]
+2019-04-23 02:09:11,719 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2019-04-23 02:09:11,719 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
+2019-04-23 02:09:11,802 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2019-04-23 02:09:11,802 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1159 ms
+2019-04-23 02:09:11,899 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-23 02:09:11,903 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-23 02:09:11,904 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-23 02:09:11,904 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-23 02:09:11,904 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-23 02:09:12,296 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 538] Loading Quartz config from [class path resource [quartz.properties]]
+2019-04-23 02:09:12,312 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-04-23 02:09:12,319 INFO [main] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-23 02:09:12,319 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-04-23 02:09:12,325 WARN [main] o.a.tomcat.jdbc.pool.ConnectionPool [DirectJDKLog.java : 180] maxIdle is larger than maxActive, setting maxIdle to: 30
+2019-04-23 02:09:12,940 INFO [main] o.s.s.quartz.LocalDataSourceJobStore [JobStoreSupport.java : 672] Using db table-based data access locking (synchronization).
+2019-04-23 02:09:12,941 INFO [main] o.s.s.quartz.LocalDataSourceJobStore [JobStoreCMT.java : 145] JobStoreCMT initialized.
+2019-04-23 02:09:12,942 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'getSchedulerFactoryBean' with instanceId 'CNgzhang.local1555956552313'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'com.xxl.job.admin.core.quartz.XxlJobThreadPool' - with 1 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2019-04-23 02:09:12,942 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'getSchedulerFactoryBean' initialized from an externally provided properties instance.
+2019-04-23 02:09:12,942 INFO [main] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-04-23 02:09:12,943 INFO [main] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@23b8d9f3
+2019-04-23 02:09:12,955 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.AdminBiz, serviceBean = class com.xxl.job.admin.service.impl.AdminBizImpl
+2019-04-23 02:09:12,956 INFO [main] c.x.j.a.c.s.XxlJobDynamicScheduler [XxlJobDynamicScheduler.java : 68] >>>>>>>>> init xxl-job admin success.
+2019-04-23 02:09:13,214 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769e7ee8: startup date [Tue Apr 23 02:09:10 CST 2019]; root of context hierarchy
+2019-04-23 02:09:13,276 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.index(org.springframework.ui.Model)
+2019-04-23 02:09:13,276 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/help]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.help()
+2019-04-23 02:09:13,277 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/toLogin]}" onto public java.lang.String com.xxl.job.admin.controller.IndexController.toLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-04-23 02:09:13,277 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/chartInfo]}" onto public com.xxl.job.core.biz.model.ReturnT<java.util.Map<java.lang.String, java.lang.Object>> com.xxl.job.admin.controller.IndexController.chartInfo(java.util.Date,java.util.Date)
+2019-04-23 02:09:13,277 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/login],methods=[POST]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.IndexController.loginDo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2019-04-23 02:09:13,278 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/logout],methods=[POST]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.IndexController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-23 02:09:13,278 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/api]}" onto public void com.xxl.job.admin.controller.JobApiController.api(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-04-23 02:09:13,280 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobcode]}" onto public java.lang.String com.xxl.job.admin.controller.JobCodeController.index(org.springframework.ui.Model,int)
+2019-04-23 02:09:13,280 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobcode/save]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobCodeController.save(org.springframework.ui.Model,int,java.lang.String,java.lang.String)
+2019-04-23 02:09:13,282 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup]}" onto public java.lang.String com.xxl.job.admin.controller.JobGroupController.index(org.springframework.ui.Model)
+2019-04-23 02:09:13,282 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup/remove]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.remove(int)
+2019-04-23 02:09:13,282 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup/update]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.update(com.xxl.job.admin.core.model.XxlJobGroup)
+2019-04-23 02:09:13,283 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobgroup/save]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobGroupController.save(com.xxl.job.admin.core.model.XxlJobGroup)
+2019-04-23 02:09:13,286 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo]}" onto public java.lang.String com.xxl.job.admin.controller.JobInfoController.index(org.springframework.ui.Model,int)
+2019-04-23 02:09:13,287 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/add]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.add(com.xxl.job.admin.core.model.XxlJobInfo)
+2019-04-23 02:09:13,287 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/remove]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.remove(int)
+2019-04-23 02:09:13,288 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/update]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.update(com.xxl.job.admin.core.model.XxlJobInfo)
+2019-04-23 02:09:13,288 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/start]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.start(int)
+2019-04-23 02:09:13,289 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/pageList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xxl.job.admin.controller.JobInfoController.pageList(int,int,int,java.lang.String,java.lang.String,java.lang.String)
+2019-04-23 02:09:13,289 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/stop]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.pause(int)
+2019-04-23 02:09:13,289 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/jobinfo/trigger]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobInfoController.triggerJob(int,java.lang.String)
+2019-04-23 02:09:13,292 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog]}" onto public java.lang.String com.xxl.job.admin.controller.JobLogController.index(org.springframework.ui.Model,java.lang.Integer)
+2019-04-23 02:09:13,292 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/pageList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xxl.job.admin.controller.JobLogController.pageList(int,int,int,int,int,java.lang.String)
+2019-04-23 02:09:13,293 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/getJobsByGroup]}" onto public com.xxl.job.core.biz.model.ReturnT<java.util.List<com.xxl.job.admin.core.model.XxlJobInfo>> com.xxl.job.admin.controller.JobLogController.getJobsByGroup(int)
+2019-04-23 02:09:13,293 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/logDetailPage]}" onto public java.lang.String com.xxl.job.admin.controller.JobLogController.logDetailPage(int,org.springframework.ui.Model)
+2019-04-23 02:09:13,293 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/logDetailCat]}" onto public com.xxl.job.core.biz.model.ReturnT<com.xxl.job.core.biz.model.LogResult> com.xxl.job.admin.controller.JobLogController.logDetailCat(java.lang.String,long,int,int)
+2019-04-23 02:09:13,294 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/logKill]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobLogController.logKill(int)
+2019-04-23 02:09:13,294 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/joblog/clearLog]}" onto public com.xxl.job.core.biz.model.ReturnT<java.lang.String> com.xxl.job.admin.controller.JobLogController.clearLog(int,int,int)
+2019-04-23 02:09:13,296 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-23 02:09:13,296 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-23 02:09:13,321 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-23 02:09:13,322 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-23 02:09:13,347 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-23 02:09:13,472 INFO [main] o.s.w.s.v.f.FreeMarkerConfigurer [FreeMarkerConfigurer.java : 127] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-04-23 02:09:13,614 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
+2019-04-23 02:09:13,621 INFO [main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 345] Starting beans in phase 2147483647
+2019-04-23 02:09:13,621 INFO [main] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 689] Will start Quartz Scheduler [getSchedulerFactoryBean] in 20 seconds
+2019-04-23 02:09:13,629 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8600"]
+2019-04-23 02:09:13,657 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
+2019-04-23 02:09:13,666 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8600 (http)
+2019-04-23 02:09:13,672 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 57] Started XxlJobAdminApplication in 3.509 seconds (JVM running for 4.365)
+2019-04-23 02:09:33,623 INFO [Quartz Scheduler [getSchedulerFactoryBean]] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 705] Starting Quartz Scheduler now, after delay of 20 seconds
+2019-04-23 02:09:33,646 INFO [Quartz Scheduler [getSchedulerFactoryBean]] o.s.s.quartz.LocalDataSourceJobStore [JobStoreSupport.java : 3644] ClusterManager: detected 1 failed or restarted instances.
+2019-04-23 02:09:33,646 INFO [Quartz Scheduler [getSchedulerFactoryBean]] o.s.s.quartz.LocalDataSourceJobStore [JobStoreSupport.java : 3503] ClusterManager: Scanning for instance "CNgzhang.local1555956497379"'s failed in-progress jobs.
+2019-04-23 02:09:33,735 INFO [Quartz Scheduler [getSchedulerFactoryBean]] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956552313 started.
+2019-04-23 02:10:59,737 INFO [http-nio-8600-exec-1] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 180] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-23 02:10:59,738 INFO [http-nio-8600-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 489] FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-23 02:10:59,755 INFO [http-nio-8600-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 508] FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-04-23 02:22:14,230 ERROR [nioEventLoopGroup-2-1] c.x.r.r.n.i.n.c.NettyHttpClientHandler [NettyHttpClientHandler.java : 53] >>>>>>>>>>> xxl-rpc netty_http client caught exception
+com.xxl.rpc.util.XxlRpcException: com.caucho.hessian.io.HessianProtocolException: No classes defined at reference '6d'
+	at com.xxl.rpc.serialize.impl.HessianSerializer.deserialize(HessianSerializer.java:52)
+	at com.xxl.rpc.remoting.net.impl.netty_http.client.NettyHttpClientHandler.channelRead0(NettyHttpClientHandler.java:43)
+	at com.xxl.rpc.remoting.net.impl.netty_http.client.NettyHttpClientHandler.channelRead0(NettyHttpClientHandler.java:19)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.caucho.hessian.io.HessianProtocolException: No classes defined at reference '6d'
+	at com.caucho.hessian.io.Hessian2Input.error(Hessian2Input.java:2952)
+	at com.caucho.hessian.io.Hessian2Input.readObject(Hessian2Input.java:2144)
+	at com.caucho.hessian.io.CollectionDeserializer.readLengthList(CollectionDeserializer.java:93)
+	at com.caucho.hessian.io.Hessian2Input.readObject(Hessian2Input.java:2114)
+	at com.xxl.rpc.serialize.impl.HessianSerializer.deserialize(HessianSerializer.java:49)
+	... 30 common frames omitted
+2019-04-23 02:22:19,108 INFO [xxl-job, admin JobTriggerPoolHelper-fastTriggerPool-2020793749] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:192.168.1.102:8500, XxlRpcRequestXxlRpcRequest{requestId='d8ba099f-8ee3-4872-a127-22d62dd78886', createMillisTime=1555957333878, accessToken='', className='com.xxl.job.core.biz.ExecutorBiz', methodName='run', parameterTypes=[class com.xxl.job.core.biz.model.TriggerParam], parameters=[TriggerParam{jobId=2, executorHandler='testJobHandler', executorParams='a b c', executorBlockStrategy='SERIAL_EXECUTION', executorTimeout=0, logId=2, logDateTim=1555957333816, glueType='BEAN', glueSource='', glueUpdatetime=1555928397000, broadcastIndex=0, broadcastTotal=1}], version='null'}
+2019-04-23 02:22:19,108 ERROR [xxl-job, admin JobTriggerPoolHelper-fastTriggerPool-2020793749] c.x.j.a.core.trigger.XxlJobTrigger [XxlJobTrigger.java : 198] >>>>>>>>>>> xxl-job trigger error, please check if the executor[192.168.1.102:8500] is running.
+com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1555957339107, request:XxlRpcRequest{requestId='d8ba099f-8ee3-4872-a127-22d62dd78886', createMillisTime=1555957333878, accessToken='', className='com.xxl.job.core.biz.ExecutorBiz', methodName='run', parameterTypes=[class com.xxl.job.core.biz.model.TriggerParam], parameters=[TriggerParam{jobId=2, executorHandler='testJobHandler', executorParams='a b c', executorBlockStrategy='SERIAL_EXECUTION', executorTimeout=0, logId=2, logDateTim=1555957333816, glueType='BEAN', glueSource='', glueUpdatetime=1555928397000, broadcastIndex=0, broadcastTotal=1}], version='null'}
+	at com.xxl.rpc.remoting.net.params.XxlRpcFutureResponse.get(XxlRpcFutureResponse.java:117)
+	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:219)
+	at com.sun.proxy.$Proxy81.run(Unknown Source)
+	at com.xxl.job.admin.core.trigger.XxlJobTrigger.runExecutor(XxlJobTrigger.java:196)
+	at com.xxl.job.admin.core.trigger.XxlJobTrigger.processTrigger(XxlJobTrigger.java:149)
+	at com.xxl.job.admin.core.trigger.XxlJobTrigger.trigger(XxlJobTrigger.java:74)
+	at com.xxl.job.admin.core.thread.JobTriggerPoolHelper$3.run(JobTriggerPoolHelper.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 02:24:51,793 ERROR [nioEventLoopGroup-3-1] c.x.r.r.n.i.n.c.NettyHttpClientHandler [NettyHttpClientHandler.java : 53] >>>>>>>>>>> xxl-rpc netty_http client caught exception
+com.xxl.rpc.util.XxlRpcException: com.caucho.hessian.io.HessianProtocolException: No classes defined at reference '6d'
+	at com.xxl.rpc.serialize.impl.HessianSerializer.deserialize(HessianSerializer.java:52)
+	at com.xxl.rpc.remoting.net.impl.netty_http.client.NettyHttpClientHandler.channelRead0(NettyHttpClientHandler.java:43)
+	at com.xxl.rpc.remoting.net.impl.netty_http.client.NettyHttpClientHandler.channelRead0(NettyHttpClientHandler.java:19)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.caucho.hessian.io.HessianProtocolException: No classes defined at reference '6d'
+	at com.caucho.hessian.io.Hessian2Input.error(Hessian2Input.java:2952)
+	at com.caucho.hessian.io.Hessian2Input.readObject(Hessian2Input.java:2144)
+	at com.caucho.hessian.io.CollectionDeserializer.readLengthList(CollectionDeserializer.java:93)
+	at com.caucho.hessian.io.Hessian2Input.readObject(Hessian2Input.java:2114)
+	at com.xxl.rpc.serialize.impl.HessianSerializer.deserialize(HessianSerializer.java:49)
+	... 30 common frames omitted
+2019-04-23 02:24:56,646 INFO [xxl-job, admin JobTriggerPoolHelper-fastTriggerPool-1220061272] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:127.0.0.1:8500, XxlRpcRequestXxlRpcRequest{requestId='e9575e61-6ee7-41bc-9c51-bfd0eb600c88', createMillisTime=1555957491637, accessToken='', className='com.xxl.job.core.biz.ExecutorBiz', methodName='run', parameterTypes=[class com.xxl.job.core.biz.model.TriggerParam], parameters=[TriggerParam{jobId=2, executorHandler='testJobHandler', executorParams='a b c', executorBlockStrategy='SERIAL_EXECUTION', executorTimeout=0, logId=3, logDateTim=1555957491529, glueType='BEAN', glueSource='', glueUpdatetime=1555928397000, broadcastIndex=0, broadcastTotal=1}], version='null'}
+2019-04-23 02:24:56,647 ERROR [xxl-job, admin JobTriggerPoolHelper-fastTriggerPool-1220061272] c.x.j.a.core.trigger.XxlJobTrigger [XxlJobTrigger.java : 198] >>>>>>>>>>> xxl-job trigger error, please check if the executor[127.0.0.1:8500] is running.
+com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1555957496646, request:XxlRpcRequest{requestId='e9575e61-6ee7-41bc-9c51-bfd0eb600c88', createMillisTime=1555957491637, accessToken='', className='com.xxl.job.core.biz.ExecutorBiz', methodName='run', parameterTypes=[class com.xxl.job.core.biz.model.TriggerParam], parameters=[TriggerParam{jobId=2, executorHandler='testJobHandler', executorParams='a b c', executorBlockStrategy='SERIAL_EXECUTION', executorTimeout=0, logId=3, logDateTim=1555957491529, glueType='BEAN', glueSource='', glueUpdatetime=1555928397000, broadcastIndex=0, broadcastTotal=1}], version='null'}
+	at com.xxl.rpc.remoting.net.params.XxlRpcFutureResponse.get(XxlRpcFutureResponse.java:117)
+	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:219)
+	at com.sun.proxy.$Proxy81.run(Unknown Source)
+	at com.xxl.job.admin.core.trigger.XxlJobTrigger.runExecutor(XxlJobTrigger.java:196)
+	at com.xxl.job.admin.core.trigger.XxlJobTrigger.processTrigger(XxlJobTrigger.java:149)
+	at com.xxl.job.admin.core.trigger.XxlJobTrigger.trigger(XxlJobTrigger.java:74)
+	at com.xxl.job.admin.core.thread.JobTriggerPoolHelper$3.run(JobTriggerPoolHelper.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 02:28:36,121 INFO [http-nio-8600-exec-2] c.x.j.a.c.s.XxlJobDynamicScheduler [XxlJobDynamicScheduler.java : 231] >>>>>>>>>>> addJob success(quartz), jobDetail:JobDetail 'DEFAULT.2':  jobClass: 'com.xxl.job.admin.core.jobbean.RemoteHttpJobBean concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: false requestsRecovers: false, cronTrigger:Trigger 'DEFAULT.2':  triggerClass: 'org.quartz.impl.triggers.CronTriggerImpl calendar: 'null' misfireInstruction: 2 nextFireTime: Tue Apr 23 02:28:40 CST 2019, date:Tue Apr 23 02:28:40 CST 2019
