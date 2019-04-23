@@ -282,3 +282,14 @@ com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1555957496646, req
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2019-04-23 02:28:36,121 INFO [http-nio-8600-exec-2] c.x.j.a.c.s.XxlJobDynamicScheduler [XxlJobDynamicScheduler.java : 231] >>>>>>>>>>> addJob success(quartz), jobDetail:JobDetail 'DEFAULT.2':  jobClass: 'com.xxl.job.admin.core.jobbean.RemoteHttpJobBean concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: false requestsRecovers: false, cronTrigger:Trigger 'DEFAULT.2':  triggerClass: 'org.quartz.impl.triggers.CronTriggerImpl calendar: 'null' misfireInstruction: 2 nextFireTime: Tue Apr 23 02:28:40 CST 2019, date:Tue Apr 23 02:28:40 CST 2019
+2019-04-23 02:31:48,813 INFO [Thread-14] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769e7ee8: startup date [Tue Apr 23 02:09:10 CST 2019]; root of context hierarchy
+2019-04-23 02:31:48,816 INFO [Thread-14] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java : 360] Stopping beans in phase 2147483647
+2019-04-23 02:31:48,817 INFO [Thread-14] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956552313 paused.
+2019-04-23 02:31:48,817 INFO [Thread-14] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
+2019-04-23 02:31:48,818 INFO [Thread-14] c.x.j.a.c.t.JobTriggerPoolHelper [JobTriggerPoolHelper.java : 108] >>>>>>>>> xxl-job trigger thread pool shutdown success.
+2019-04-23 02:31:48,819 INFO [xxl-job, admin JobRegistryMonitorHelper] c.x.j.a.c.t.JobRegistryMonitorHelper [JobRegistryMonitorHelper.java : 92] >>>>>>>>>>> xxl-job, job registry monitor thread stop
+2019-04-23 02:31:48,820 INFO [xxl-job, admin JobFailMonitorHelper] c.x.j.a.c.t.JobFailMonitorHelper [JobFailMonitorHelper.java : 96] >>>>>>>>>>> xxl-job, job fail monitor thread stop
+2019-04-23 02:31:48,828 INFO [Thread-14] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 806] Shutting down Quartz Scheduler
+2019-04-23 02:31:48,828 INFO [Thread-14] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956552313 shutting down.
+2019-04-23 02:31:48,828 INFO [Thread-14] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956552313 paused.
+2019-04-23 02:31:48,829 INFO [Thread-14] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler getSchedulerFactoryBean_$_CNgzhang.local1555956552313 shutdown complete.

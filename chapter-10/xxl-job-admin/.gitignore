@@ -3,7 +3,7 @@ HELP.md
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 /joblogs/
-/logs/
+#/logs/
 .gradletasknamecache
 
 ### STS ###
